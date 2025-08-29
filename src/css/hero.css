@@ -1,0 +1,46 @@
+.section-hero {
+    max-width: 375px;
+    padding: 108px 0;
+    background-image: url(/img/hero/hero-mob-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.hero-container {
+    padding: 0 32px;
+}
+
+.hero-header {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #fff;
+
+    margin-bottom: 24px;
+}
+
+.hero-text {
+    font-size: 18px;
+    color: #fff;
+
+    max-width: 256px;
+    margin-bottom: 32px;
+}
+
+.hero-anchor-link {
+    display: block;
+    background-color: #6F4E37;
+    box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+        inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2),
+        inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+        inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+        inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+    border-radius: 100px;
+    padding: 10px 24px;
+    font-weight: 500;
+    color: #ffffff;
+
+    max-width: 135px;
+}
