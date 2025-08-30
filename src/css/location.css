@@ -1,38 +1,24 @@
-.container {}
-
 .location-intro {
     margin-bottom: 40px;
 }
 
 .location-subtitle {
-    font-family: "Quicksand", sans-serif;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #0b0803;
 
     text-align: start;
 }
 
 .location-title {
-    font-family: "Aboreto", sans-serif;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 1.2;
-        letter-spacing: -0.01em;
-        color: #0b0803;
+    font-size: 36px;
+    color: #0b0803;
 
-        text-align: start;
-        margin-top: 16px;
-        margin-bottom: 24px;
+    text-align: start;
+    margin-top: 16px;
+    margin-bottom: 24px;
 }
 
 .location-text {
-    font-family: "Quicksand", sans-serif;
-    font-weight: 400;
     font-size: 18px;
-    line-height: 1.5;
-    color: #0b0803;
 
     text-align: start;
 }
@@ -42,8 +28,6 @@
     flex-direction: column;
     gap: 40px;
 }
-
-.location-social-item {}
 
 .location-social-svg {
     fill: #0b0803;
@@ -55,20 +39,15 @@
     font-size: 20px;
     line-height: 1.4;
     letter-spacing: -0.01em;
-    color: #0b0803;
 
     margin-top: 16px;
     margin-bottom: 8px;
 }
 
 .location-social-link {
-    font-family: "Quicksand", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
     text-decoration: underline;
     text-decoration-skip-ink: none;
-    color: #0b0803;
+
     opacity: 1;
     transition: opacity 250ms ease;
 }
@@ -80,21 +59,11 @@
 }
 
 .location-social-item-text {
-    font-family: "Quicksand", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #0b0803;
-
     margin-bottom: 16px;
 }
 
 .location-social-link-map {
-    font-family: "Quicksand", sans-serif;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    color: #0b0803;
     opacity: 1;
     transition: opacity 250ms ease;
 
