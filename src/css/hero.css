@@ -7,6 +7,12 @@
     background-size: cover;
 }
 
+@media screen and (min-resolution: 192dpi) {
+    .section-hero {
+        background-image: url("/img/hero/hero-mob@2x-min.jpg");
+    }
+}
+
 .hero-container {
     padding: 0 32px;
 }
