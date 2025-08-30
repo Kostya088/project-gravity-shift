@@ -1,15 +1,3 @@
-.social-links-list,
-.footer-nav-list {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0;
-}
-
-.footer-nav-link {
-    text-decoration: none;
-    color: #0B0803;
-}
-
 .container {
     min-width: 320px;
     max-width: 375px;
