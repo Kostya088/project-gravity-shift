@@ -54,9 +54,12 @@
 }
 
 .location-social-link:hover,
-.location-social-link:focus,
-.location-social-link:active {
+.location-social-link:focus {
     opacity: 0.7;
+}
+
+.location-social-link:active {
+    opacity: 0.5;
 }
 
 .location-social-item-text {
@@ -80,9 +83,12 @@
 }
 
 .location-social-link-map:hover,
-.location-social-link-map:focus,
-.location-social-link-map:active {
+.location-social-link-map:focus {
     opacity: 0.7;
+}
+
+.location-social-link-map:active {
+    opacity: 0.5;
 }
 
 .location-map {
