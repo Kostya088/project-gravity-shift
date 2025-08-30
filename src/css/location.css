@@ -1,0 +1,123 @@
+.container {}
+
+.location-intro {
+    margin-bottom: 40px;
+}
+
+.location-subtitle {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0b0803;
+
+    text-align: start;
+}
+
+.location-title {
+    font-family: "Aboreto", sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 1.2;
+        letter-spacing: -0.01em;
+        color: #0b0803;
+
+        text-align: start;
+        margin-top: 16px;
+        margin-bottom: 24px;
+}
+
+.location-text {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #0b0803;
+
+    text-align: start;
+}
+
+.location-social-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.location-social-item {}
+
+.location-social-svg {
+    fill: #0b0803;
+}
+
+.location-social-title {
+    font-family: "Aboreto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    color: #0b0803;
+
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.location-social-link {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #0b0803;
+    opacity: 1;
+    transition: opacity 250ms ease;
+}
+
+.location-social-link:hover,
+.location-social-link:focus,
+.location-social-link:active {
+    opacity: 0.7;
+}
+
+.location-social-item-text {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0b0803;
+
+    margin-bottom: 16px;
+}
+
+.location-social-link-map {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0b0803;
+    opacity: 1;
+    transition: opacity 250ms ease;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.location-social-link-map svg {
+    fill: #0b0803;
+    transition: opacity 250ms ease;
+}
+
+.location-social-link-map:hover,
+.location-social-link-map:focus,
+.location-social-link-map:active {
+    opacity: 0.7;
+}
+
+.location-map {
+    overflow: hidden;
+    border-radius: 40px;
+
+    margin-top: 32px;
+}
