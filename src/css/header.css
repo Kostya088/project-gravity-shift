@@ -39,7 +39,7 @@
   }
 
   .header-logo {
-    margin-right: 100px;
+    margin-right: auto;
   }
 
   .header-nav-list {
@@ -55,17 +55,18 @@
     font-size: 16px;
     line-height: 1.5;
     color: #0b0803;
-    transition: color 250ms ease;
+    transition: opacity 250ms ease;
   }
 
   .header-anchor-link:hover,
   .header-anchor-link:focus {
     opacity: 0.7;
   }
+
+  .header-anchor-link:active {
+    opacity: 0.5;
+  }
 }
 
-@media screen and (min-width: 1158px) {
-  .header-logo {
-    margin-right: auto;
-  }
+@media screen and (min-width: 1440px) {
 }
