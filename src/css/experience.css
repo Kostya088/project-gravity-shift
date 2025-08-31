@@ -1,0 +1,60 @@
+.experince-title-text{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+.experience-description-text{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.experience-photo-galery{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 24px;
+    max-width: 100%;
+    width: 100%; 
+}
+
+.experience-photo-galery img{
+    border-radius: 32px;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .experience-photo-galery{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .experience-photo-galery li {
+        flex: 1 1 calc(50% - 32px);
+        max-width: calc(100% - 32px);
+    }
+
+    .experience-photo-galery li.experience-photo-7 {
+        max-width: 100%;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .experince-title-text{
+        font-size: 48px;
+    }
+
+    .experience-photo-galery {
+        flex-flow: column wrap; /* Встановлює вертикальний потік із переносом */
+        height: 948px;
+        justify-content: stretch;
+    }
+
+    .experience-photo-galery li {
+        flex: none;
+        max-width:none;
+    }
+}
