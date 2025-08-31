@@ -70,12 +70,6 @@ opacity: 0.5;
     opacity: 0.5;
 }
 
-@media screen and (min-width: 375px) {
-    .footer-wrapper {
-        max-width: 320px;
-    }
-}
-
 @media screen and (min-width:768px) {
 
     .footer-logo-social-container {
