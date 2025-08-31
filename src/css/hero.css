@@ -1,0 +1,122 @@
+.section-hero {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 108px 0;
+    background-image: url(/img/hero/hero-mob-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Mob 2x background */
+@media screen and (min-resolution: 192dpi) {
+    .section-hero {
+        background-image: url("/img/hero/hero-mob@2x-min.jpg");
+    }
+}
+
+.hero-container {
+    padding: 0 32px;
+}
+
+.hero-header {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #fff;
+
+    margin-bottom: 24px;
+}
+
+.hero-text {
+    font-size: 18px;
+    color: #fff;
+
+    max-width: 256px;
+    margin-bottom: 32px;
+}
+
+.hero-anchor-link {
+    display: block;
+    background-color: #6F4E37;
+    box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+        inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2),
+        inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+        inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+        inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+    border-radius: 100px;
+    padding: 10px 24px;
+    font-weight: 500;
+    color: #ffffff;
+
+    max-width: 135px;
+
+    transition: box-shadow 550ms ease, opacity 550ms ease;
+}
+
+.hero-anchor-link:focus {
+    box-shadow: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .section-hero {
+        max-width: 768px;
+        padding: 311px 0;
+        background-image: url(/img/hero/hero-tab-min.jpg);
+    }
+
+    .hero-header {
+        max-width: 560px;
+    }
+
+    .hero-text {
+        max-width: 560px;
+    }
+}
+
+/* Tab 2x background */
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .section-hero {
+        background-image: url("/img/hero/hero-tab@2x-min.jpg");
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .section-hero {
+        max-width: 1440px;
+        padding: 259px 0;
+        background-image: url(/img/hero/hero-desk-min.jpg);
+        text-align: start;
+    }
+
+    .hero-container {
+        padding: 0 64px;
+    }
+    
+    .hero-header {
+        font-size: 56px;
+    }
+
+    .hero-anchor-link:hover {
+        box-shadow: none;
+    }
+
+
+    .hero-anchor-link:active {
+        box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+            inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2),
+            inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+            inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+            inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+        opacity: 0.5;
+    } 
+}
+
+@media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
+    .section-hero {
+        background-image: url("/img/hero/hero-desk@2x-min.jpg");
+    }
+}
