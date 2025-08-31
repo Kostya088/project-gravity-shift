@@ -81,7 +81,7 @@ opacity: 0.5;
     .footer-logo-social-container {
         flex-direction: row;
         justify-content: center;
-        align-items: baseline;
+        align-items: center;
     }
 
     .footer-nav-list {
@@ -95,6 +95,10 @@ opacity: 0.5;
     .footer-logo-img {
         width: 84px;
         height: 36px;
+    }
+    .footer-social-icon {
+        width: 24px;
+        height: 24px;
     }
 }
 
