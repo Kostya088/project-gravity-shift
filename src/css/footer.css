@@ -51,9 +51,6 @@
 }
 
 @media screen and (min-width:768px) {
-    .footer .container {
-        padding: 24px 32px;
-    }
 
     .footer-logo-social-container {
         flex-direction: row;
@@ -76,10 +73,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .footer .container {
-        padding: 24px 64px;
-    }
-
+    
     .footer-wrapper {
         width: 1312px;
         height: 100px;
