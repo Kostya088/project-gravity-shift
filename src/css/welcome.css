@@ -13,7 +13,6 @@
   text-align: start;
   text-transform: uppercase;
   margin-bottom: 32px;
-  text-align: start;
 }
 .welcome-paragraph {
   max-width: 288px;
@@ -21,7 +20,6 @@
   font-size: 18px;
   text-align: start;
   margin-bottom: 32px;
-  overflow: scroll;
 }
 .welcome-link {
   display: flex;
@@ -31,7 +29,6 @@
   border-radius: 100px;
   border: transparent;
   padding: 10px 24px;
-
   justify-content: center;
   box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
     inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
@@ -61,6 +58,42 @@
 
 .welcome-image {
   border-radius: 40px;
+  height: 100%;
+}
 
-  height: 162px;
+/* css for tablet */
+@media screen and (min-width: 768px) {
+  .welcome-subcontainer {
+    display: flex;
+    gap: 32px;
+    align-items: baseline;
+  }
+  .welcome-title {
+    max-width: 336px;
+    height: 169px;
+    margin: 0;
+  }
+  .welcome-paragraph {
+    max-width: 336px;
+    height: 189px;
+  }
+  .welcome-link {
+    width: 181px;
+  }
+}
+
+/* css for desktop */
+@media screen and (min-width: 1440px) {
+  .welcome-title {
+    max-width: 640px;
+    height: 116px;
+    font-size: 48px;
+  }
+  .welcome-paragraph {
+    max-width: 640px;
+    height: 108px;
+  }
+  .welcome-link {
+    margin-bottom: 80px;
+  }
 }
