@@ -72,7 +72,7 @@ opacity: 0.5;
 
 @media screen and (min-width: 375px) {
     .footer-wrapper {
-        max-width: 100%;
+        max-width: 320px;
     }
 }
 
@@ -89,7 +89,7 @@ opacity: 0.5;
     }
 
     .footer-wrapper {
-        width: 704px;
+        max-width: 704px;
     }
 
     .footer-logo-img {
@@ -101,7 +101,7 @@ opacity: 0.5;
 @media screen and (min-width: 1440px) {
     
     .footer-wrapper {
-        width: 1312px;
+        max-width: 1312px;
         height: 100px;
         flex-direction: row;
     }
