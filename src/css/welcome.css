@@ -48,11 +48,11 @@
   fill: #fff;
 }
 
-.welcome-link::active {
+.welcome-link:active {
   opacity: 0.5;
 }
-.welcome-link::hover,
-.welcome-link::focus {
+.welcome-link:hover,
+.welcome-link:focus {
   box-shadow: none;
 }
 
