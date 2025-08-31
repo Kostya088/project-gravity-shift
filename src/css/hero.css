@@ -52,7 +52,7 @@
 
     max-width: 135px;
 
-    transition: box-shadow 550ms ease, opacity 550ms ease;
+    transition: box-shadow 2500ms ease, opacity 250ms ease;
 }
 
 .hero-anchor-link:focus {
