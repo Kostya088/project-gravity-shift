@@ -1,0 +1,100 @@
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 250ms ease, visibility 250ms ease;
+}
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu__panel {
+  background: #e0cbb4;
+  width: 100%;
+  min-height: 100svh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.mobile-menu__top {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.mobile-menu__logo svg {
+  display: block;
+  max-width: 84px;
+  height: auto;
+}
+
+.mobile-menu__close {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 200ms, box-shadow 200ms;
+}
+.mobile-menu__close:hover,
+.mobile-menu__close:focus-visible {
+  background: rgba(111, 78, 55, 0.15);
+  box-shadow: 0 0 0 3px rgba(111, 78, 55, 0.25);
+}
+.mobile-menu__icon {
+  fill: currentColor;
+  color: #0b0803;
+}
+
+.mobile-menu__nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-menu__link {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #0b0803;
+  text-decoration: none;
+  transition: opacity 200ms, transform 200ms;
+}
+.mobile-menu__link:hover,
+.mobile-menu__link:focus-visible {
+  color: #6f4e37;
+}
+
+/* Ховаємо на tablet+ */
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
