@@ -31,14 +31,22 @@
     gap: 40px;
     align-items: center;
     margin-bottom: 32px;
-
 }
 
 .social-links-list {
     display: flex;
     gap: 12px;
 }
-
+.footer-nav-link {
+    transition: opacity 250ms ease;
+}
+.footer-nav-link:active {
+opacity: 0.5;
+}
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+    opacity: 0.7;
+}
 .footer-nav-list {
     display: flex;
     gap: 32px;
@@ -49,6 +57,18 @@
 .footer-copyright {
     font-size: 14px;
 }
+.footer-social-icon {
+    fill: #0b0803;
+    transition: opacity 250ms ease;
+}
+.footer-social-icon:active {
+    opacity: 0.5;
+}
+.footer-social-icon:hover,
+.footer-social-icon:focus {
+    opacity: 0.5;
+}
+
 
 @media screen and (min-width:768px) {
 
