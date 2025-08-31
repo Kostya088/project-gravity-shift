@@ -5,10 +5,6 @@
   padding: 18px 24px;
 }
 
-.header-logo-svg {
-  fill: #0b0803;
-}
-
 .header-nav-list {
   display: none;
 }
@@ -38,7 +34,7 @@
     align-items: center;
   }
 
-  .header-logo {
+  .header-logo-link {
     margin-right: auto;
   }
 
@@ -66,7 +62,4 @@
   .header-anchor-link:active {
     opacity: 0.5;
   }
-}
-
-@media screen and (min-width: 1440px) {
 }
