@@ -1,7 +1,9 @@
+.footer-wrapper.container {
+    min-width: 288px;
+}
 .footer {
     background-color: #b58869;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding: 24px 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +13,7 @@
     border: 1px solid rgba(11, 8, 3, 0.15);
     border-radius: 40px;
     padding: 32px 48px;
-    width: 288px;
+    width: 100%;
     background-color: #c29d84;
     margin-bottom: 32px;
     display: flex;
