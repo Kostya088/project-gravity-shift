@@ -51,8 +51,7 @@
 }
 
 @media screen and (min-width:768px) {
-    .container {
-        max-width: 768px;
+    .footer .container {
         padding: 24px 32px;
     }
 
@@ -77,8 +76,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .container {
-        max-width: 1440px;
+    .footer .container {
         padding: 24px 64px;
     }
 
