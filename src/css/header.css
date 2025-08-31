@@ -5,6 +5,11 @@
   padding: 18px 24px;
 }
 
+.header-logo {
+  width: 64px;
+  height: 36px;
+}
+
 .header-nav-list {
   display: none;
 }
@@ -12,7 +17,7 @@
 .burger-btn {
   background-color: transparent;
   box-shadow: none;
-  padding: 0;
+  padding: 12px;
 }
 
 .burger-icon {
