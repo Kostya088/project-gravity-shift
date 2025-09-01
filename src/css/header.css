@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 24px;
+  padding: 18px 16px;
 }
 
 .header-logo {
@@ -31,16 +31,12 @@
   }
 
   .header-container {
-    padding: 18px 64px;
+    padding: 0 64px;
   }
 
   .header-nav {
     display: flex;
     align-items: center;
-  }
-
-  .header-logo-link {
-    margin-right: auto;
   }
 
   .header-nav-list {
