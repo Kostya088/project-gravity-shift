@@ -9,6 +9,10 @@
     display: flex;
     justify-content: center;
     z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal-overlay.is-open {
     opacity: 1;
     pointer-events: auto;
 }
