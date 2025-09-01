@@ -13,7 +13,7 @@
   border: 1px solid rgba(11, 8, 3, 0.15);
   border-radius: 32px;
   padding: 32px;
-  min-width: 265px;
+  min-width: 288px;
   background-color: #c29d84;
 }
 
@@ -23,6 +23,10 @@
   row-gap: 24px;
   justify-content: center;
   width: 100%;
+}
+
+.visitors-rating-item {
+  display: flex;
 }
 
 .visitors-rating-list {
@@ -38,7 +42,6 @@
 
 .visitors-name {
   font-weight: 600;
-  min-width: 224px;
 }
 
 .rating-icon-negative {
@@ -50,10 +53,6 @@
 /* testimonials-tablet */
 
 @media screen and (min-width: 768px) {
-  .container.visitors-feedback-card {
-    min-width: 310px;
-  }
-
   .visitors-feedback-list {
     column-gap: 24px;
   }
