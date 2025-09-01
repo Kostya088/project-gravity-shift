@@ -8,6 +8,13 @@
     background-size: cover;
 }
 
+.hero-content-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
 /* Mob 2x background */
 @media screen and (min-resolution: 192dpi) {
     .section-hero {
@@ -25,8 +32,6 @@
     line-height: 1.2;
     letter-spacing: -0.01em;
     color: #fff;
-
-    margin-bottom: 24px;
 }
 
 .hero-text {
