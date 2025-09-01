@@ -49,19 +49,17 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  display: inline-flex;
-  align-items: center;
-  background: transparent;
   border: none;
   padding: 0;
   border-radius: 0;
   cursor: pointer;
   transition: background-color 200ms, box-shadow 200ms;
 }
+
 .mobile-menu__close:hover,
 .mobile-menu__close:focus-visible {
-  background: rgba(111, 78, 55, 0.15);
-  box-shadow: 0 0 0 3px rgba(111, 78, 55, 0.25);
+  background: none;
+  box-shadow: none;
 }
 
 .mobile-menu__icon {
