@@ -57,13 +57,17 @@
 
     max-width: 135px;
 
-    transition: box-shadow 2500ms ease, opacity 250ms ease;
+    transition: box-shadow 250ms ease, opacity 250ms ease;
 }
 
-.hero-anchor-link:focus {
-    box-shadow: none;
+.hero-anchor-link:active {
+    box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+        inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2),
+        inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+        inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+        inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+    opacity: 0.5;
 }
-
 
 @media screen and (min-width: 768px) {
     .section-hero {
@@ -105,19 +109,13 @@
         font-size: 56px;
     }
 
-    .hero-anchor-link:hover {
+    .hero-anchor-link:hover,
+    .hero-anchor-link:focus {
         box-shadow: none;
     }
 
 
-    .hero-anchor-link:active {
-        box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
-            inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2),
-            inset 0 0 0 1px rgba(11, 8, 3, 0.15),
-            inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
-            inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
-        opacity: 0.5;
-    } 
+    
 }
 
 @media screen and (min-width: 1440px) and (min-resolution: 192dpi) {
