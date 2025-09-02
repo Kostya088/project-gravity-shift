@@ -23,7 +23,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background: #e0cbb4;
-    width: 100%;
+    width: 288px;
     min-width: 288px;
     max-width: 343px;
     max-height: 90vh;
@@ -103,11 +103,7 @@
 .modal-close:focus {
     opacity: 0.7;
 }
-@media screen and (max-width: 375px) {
-    .modal-window {
-        max-width: 100%;
-    }
-}
+
 
 @media screen and (min-width: 768px) {
     .modal-window {
