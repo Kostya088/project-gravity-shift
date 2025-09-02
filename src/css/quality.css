@@ -81,7 +81,7 @@
     margin-top: 8px;
   }
     .text-desc-3 {
-    margin-top: 440px;
+    max-width: 440px;
   }
 }
 
