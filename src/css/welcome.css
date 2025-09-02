@@ -1,0 +1,101 @@
+/* welcome  */
+
+/* css for mobile */
+
+.welcome-text {
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.welcome-title {
+  max-width: 288px;
+  font-size: 36px;
+  text-align: start;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+.welcome-wrapper-location {
+  margin-bottom: 32px;
+}
+.welcome-paragraph {
+  font-size: 18px;
+  text-align: start;
+  margin-bottom: 32px;
+}
+.welcome-link {
+  display: flex;
+  gap: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100px;
+  border: transparent;
+  padding: 10px 24px;
+  justify-content: center;
+  box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05),
+    inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15),
+    inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+  background-color: #6f4e37;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  transition: box-shadow 250ms ease, opacity 250ms ease;
+}
+
+.welcome-icon {
+  fill: #fff;
+}
+
+.welcome-link:active {
+  opacity: 0.5;
+}
+.welcome-link:hover,
+.welcome-link:focus {
+  box-shadow: none;
+}
+
+.welcome-image {
+  border-radius: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* css for tablet */
+@media screen and (min-width: 768px) {
+  .welcome-subcontainer {
+    display: flex;
+    gap: 32px;
+    align-items: baseline;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .welcome-title {
+    max-width: 336px;
+    margin: 0;
+  }
+
+  .welcome-paragraph {
+    max-width: 336px;
+  }
+  .welcome-link {
+    width: 181px;
+    margin-left: 0;
+  }
+}
+
+/* css for desktop */
+@media screen and (min-width: 1440px) {
+  .welcome-title {
+    max-width: 640px;
+    font-size: 48px;
+  }
+  .welcome-paragraph {
+    max-width: 640px;
+  }
+
+  .welcome-wrapper-location {
+    margin-bottom: 80px;
+  }
+}
