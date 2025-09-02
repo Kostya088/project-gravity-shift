@@ -58,7 +58,7 @@
     flex-basis: 100%;
     max-width: 100%;
   }
-  .img-quality3 {
+  .img-quality-3 {
     width: 100%;
     border-radius: 32px;
   }
@@ -79,6 +79,9 @@
   }
   .text-desc {
     margin-top: 8px;
+  }
+    .text-desc-3 {
+    margin-top: 440px;
   }
 }
 
