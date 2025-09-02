@@ -1,14 +1,9 @@
 /* welcome  */
 
 /* css for mobile */
-.welcome-wrapper {
-  max-width: 288px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .welcome-text {
   font-weight: 600;
-  max-width: 71px;
   margin-bottom: 16px;
 }
 .welcome-title {
@@ -19,24 +14,18 @@
   margin-bottom: 32px;
 }
 .welcome-wrapper-location {
-  max-width: 288px;
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom: 32px;
 }
 .welcome-paragraph {
-  max-width: 288px;
   font-size: 18px;
   text-align: start;
   margin-bottom: 32px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .welcome-link {
   display: flex;
   gap: 12px;
-  width: 288px;
-  height: 44px;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 100px;
   border: transparent;
   padding: 10px 24px;
@@ -67,9 +56,7 @@
 }
 
 .welcome-image {
-  max-width: 288px;
   border-radius: 40px;
-  height: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -83,10 +70,7 @@
     margin-right: auto;
     margin-left: auto;
   }
-  .welcome-wrapper,
-  .welcome-wrapper-location {
-    max-width: 336px;
-  }
+
   .welcome-title {
     max-width: 336px;
     margin: 0;
@@ -99,17 +83,10 @@
     width: 181px;
     margin-left: 0;
   }
-  .welcome-image {
-    max-width: 704px;
-  }
 }
 
 /* css for desktop */
 @media screen and (min-width: 1440px) {
-  .welcome-wrapper {
-    max-width: 640px;
-  }
-
   .welcome-title {
     max-width: 640px;
     font-size: 48px;
@@ -119,10 +96,6 @@
   }
 
   .welcome-wrapper-location {
-    max-width: 640px;
     margin-bottom: 80px;
-  }
-  .welcome-image {
-    max-width: 1312px;
   }
 }
