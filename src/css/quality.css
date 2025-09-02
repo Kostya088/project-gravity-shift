@@ -60,7 +60,6 @@
   }
   .img-quality-3 {
     width: 100%;
-    border-radius: 32px;
   }
   .text-Why {
     font: 400 36px/1.2 "Aboreto", sans-serif;
@@ -91,7 +90,6 @@
     flex-wrap: nowrap;
   }
   .img-quality {
-    border-radius: 32px;
     max-width: 100%;
   }
   .item {
