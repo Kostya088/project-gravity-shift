@@ -1,16 +1,12 @@
 (() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtns: document.querySelectorAll('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
-  };
+  const openBtn = document.querySelector('[data-modal-open]');
+  const modalOverlay = document.querySelector('[data-modal]');
+  const closeBtns = document.querySelectorAll('[data-modal-close]');
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtns.forEach(btn => {
-    btn.addEventListener('click', toggleModal);
-  });
+  if (!openBtn || !modalOverlay) return; // якщо елементів немає, скрипт не падає
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-open');
-  }
+  const toggleModal = () => modalOverlay.classList.toggle('is-open');
+
+  openBtn.addEventListener('click', toggleModal);
+  closeBtns.forEach(btn => btn.addEventListener('click', toggleModal));
 })();

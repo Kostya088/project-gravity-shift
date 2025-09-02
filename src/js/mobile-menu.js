@@ -1,16 +1,12 @@
 (() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-menu-open]'),
-    closeModalBtns: document.querySelectorAll('[data-menu-close]'),
-    modal: document.querySelector('[data-menu]'),
-  };
+  const openBtn = document.querySelector('[data-menu-open]');
+  const menu = document.querySelector('[data-menu]');
+  const closeBtns = document.querySelectorAll('[data-menu-close]');
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtns.forEach(btn => {
-    btn.addEventListener('click', toggleModal);
-  });
+  if (!openBtn || !menu) return; // якщо елементів немає, скрипт не падає
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-open');
-  }
+  const toggleMenu = () => menu.classList.toggle('is-open');
+
+  openBtn.addEventListener('click', toggleMenu);
+  closeBtns.forEach(btn => btn.addEventListener('click', toggleMenu));
 })();
