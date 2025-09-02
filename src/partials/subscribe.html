@@ -12,13 +12,9 @@
   <input class="label-input-subscribe" type="email" placeholder="Your Email Here" id="email" name="email" required />
   <button type="submit" class="send-button">
     Subscribe
-
-    <span class="icon-wrapper">
 <svg class="send-icon" width=24; height=24; >
   <use href="../img/subscribe/icon.svg"></use>
 </svg>
-
-    </span>
     
   </button>
 </form>
@@ -29,10 +25,34 @@
   
 
       <!-- Права частина -->
-      <div class="subscribe-image">
-        <img src="../img/subscribe/subscribe-desk.jpg" alt="People working and enjoying coffee" width="640"
-          srcset="../img/subscribe/subscribe-desk@2x.jpg">
-      </div>
+      
+<div class="subscribe-image">
+
+  <picture>
+    <!-- Для телефона -->
+    <source media="(max-width: 767px)"
+      srcset="../img/subscribe/subscribe-mob.jpg 1x, ../img/subscribe/subscribe-mob@2x.jpg 2x">
+
+      <!-- Для планшета -->
+      <source media="(min-width: 768px) and (max-width: 1157px)"
+        srcset="../img/subscribe/subscribe-tab.jpg 1x, ../img/subscribe/subscribe-tab@2x.jpg 2x">
+
+    <!-- Для комп'ютера -->
+    <source media="(min-width: 1158px)"
+      srcset="../img/subscribe/subscribe-desk.jpg 1x, ../img/subscribe/subscribe-desk@2x.jpg 2x">
+
+<img src="../img/subscribe/subscribe-desk.jpg" alt="People working and enjoying coffee" width="640" height="400"
+  srcset="../img/subscribe/subscribe-desk@2x.jpg">
+  </picture>
+
+
+</div>
+
+
+
+
+
+
 </div>
 
 

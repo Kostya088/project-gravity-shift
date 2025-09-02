@@ -1,6 +1,6 @@
 .subscribe-elements {
     display: flex;
-        gap: 32px;
+    gap: 32px;
 }
 .subscribe-title {
 font-size: 48px;
@@ -14,6 +14,8 @@ margin-bottom: 24px;
 .subscribe-text {
     font-size: 12px;
 }
+
+
 .pole {
     margin-bottom: 16px;
 }
@@ -26,27 +28,57 @@ margin-bottom: 24px;
     background: rgba(0, 0, 0, 0);
 
 }
+
 .send-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 100px;
-    padding: 10px 24px;
     width: 158px;
     height: 44px;
-}
-.send-icon {
-display: block;
-width: 24px;
-height: 24px;
-margin-left: 12px;
-}
-.icon-wrapper {
+    gap: 12px;
     display: flex;
     align-items: center;
+        /* вертикальне центрування */
     justify-content: center;
-    width: 24px;
-    height: 24px;
-    padding: 0;
-    margin: 0;
+        /* горизонтальне центрування контенту */
+    padding: 10px 24px;
+
+            }
+    
+
+            
+    
+
+
+.send-icon {
+width: 24px;
+height: 24px;
+display: block;
 }
+
+
+
+
+.subscribe-image img{
+border-radius: 40px;
+width: 640px;
+height: 400px;
+}
+
+/* для телефона */
+@media screen and (max-width:767px) {
+    .send-button {
+            border-radius: 100px;
+            width: 288px;
+            height: 44px;
+        }
+}
+
+/* для планшета і телефона */
+@media screen and (max-width: 1157px) {
+.subscribe-elements {
+    display: inline-block;
+}
+.text-column {
+    margin-bottom: 32px;
+}
+}
+
