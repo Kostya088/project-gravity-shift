@@ -1,9 +1,11 @@
+        /* mobile first */
+
+
 .subscribe-elements {
-    display: flex;
-    gap: 32px;
+    display: block;
 }
 .subscribe-title {
-font-size: 48px;
+font-size: 36px;
 margin-bottom: 24px;
 }
 
@@ -17,12 +19,13 @@ margin-bottom: 24px;
 
 
 .pole {
-    margin-bottom: 16px;
+    margin-bottom: 24px;
 }
+
 .label-input-subscribe {
     border-radius: 12px;
-    width: 339px;
-    height: 44px;
+    width: 288px;
+    height: 40px;
     border: 1px solid rgba(0, 0, 0, 0.15);
     padding: 8px 12px;
     background: rgba(0, 0, 0, 0);
@@ -31,27 +34,34 @@ margin-bottom: 24px;
 
 .send-button {
     border-radius: 100px;
-    width: 158px;
+    width: 288px;
     height: 44px;
-    gap: 12px;
     display: flex;
     align-items: center;
         /* вертикальне центрування */
     justify-content: center;
         /* горизонтальне центрування контенту */
-    padding: 10px 24px;
-
+    padding: 10px 89px;
+    margin-top: 24px;
+    fill: #FFF;
             }
+
+.send-button:hover,
+.send-button:focus {
+    background: rgba(0, 0, 0, 0.1);
+    color: #0b0803;
+    fill: #0b0803;
+}
+
     
-
-            
-    
-
-
 .send-icon {
 width: 24px;
 height: 24px;
 display: block;
+}
+
+.send-icon {
+    color: black;
 }
 
 
@@ -59,26 +69,84 @@ display: block;
 
 .subscribe-image img{
 border-radius: 40px;
-width: 640px;
+width: 288px;
 height: 400px;
+margin-top: 32px;
 }
 
-/* для телефона */
-@media screen and (max-width:767px) {
-    .send-button {
-            border-radius: 100px;
-            width: 288px;
-            height: 44px;
-        }
+/* для планшета */
+@media screen and (min-width:768px) and (max-width:1157px){
+
+.send-button {
+        display: flex;
+        width: 158px;
+        padding: 10px 24px;
+        margin-top: 0;
+    }
+
+    .subscribe-elements {
+        gap: 32px;
+
+    }
+    .pole {
+        display: flex;
+        margin-bottom: 16px;
+        gap: 24px;
+    }
+    
+.label-input-subscribe {
+    width: 340px;
+    height: 40px;
+
+}
+.subscribe-image img {
+    border-radius: 40px;
+    width: 704px;
+    height: 400px;
+}
 }
 
-/* для планшета і телефона */
-@media screen and (max-width: 1157px) {
+/* для компа */
+@media screen and (min-width: 1158px) {
+.send-button {
+        width: 158px;
+        display: flex;
+        padding: 10px 24px;
+        margin-top: 0;
+    }
+
+.subscribe-title {
+    font-size: 48px;
+    }
+
 .subscribe-elements {
-    display: inline-block;
+    display: flex;
+    align-items: center;
 }
-.text-column {
-    margin-bottom: 32px;
+.subscribe-image img {
+    border-radius: 40px;
+    width: 640px;
+    height: 400px;
+}
+.pole {
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+}
+.label-input-subscribe {
+    width: 340px;
+    height: 44px;
+}
+.subscribe-image img {
+    border-radius: 40px;
+    width: 640px;
+    height: 400px;
 }
 }
+
+
+
+
+
+
 
