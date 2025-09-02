@@ -43,6 +43,8 @@
 .text-desc {
   margin-top: 8px;
 }
+
+
 @media screen and (min-width: 768px) {
   .quality-container {
     justify-content: center;
@@ -79,15 +81,17 @@
     margin-top: 8px;
   }
 }
+
+
 @media screen and (min-width: 1440px) {
   .quality-container {
-  flex-wrap: nowrap;
-}
-.img-quality {
-  border-radius: 32px;
-  max-width: 100%;
-}
-.item {
+    flex-wrap: nowrap;
+  }
+  .img-quality {
+    border-radius: 32px;
+    max-width: 100%;
+  }
+  .item {
     max-width: calc((100% - 48px) / 3);
-}
+  }
 }
