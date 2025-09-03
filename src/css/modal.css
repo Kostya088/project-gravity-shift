@@ -28,7 +28,10 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 64px 16px;
     text-align: center;
-    max-width: 100%;
+    width: 100%;
+    max-width: 343px;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .modal-close {
@@ -42,6 +45,7 @@
         padding: 0;
         box-shadow: none;
         border-radius: 0;
+        
 }
 
 .title-and-text {
@@ -56,6 +60,7 @@
     margin-left: auto;
     margin-right: auto;
     border-radius: 24px;
+    width: 100%;
     
 }
 
@@ -66,14 +71,14 @@
     line-height: 1.2;
     letter-spacing: -0.01em;
     margin: 0 auto;
-    max-width: 256px;
+    
 }
 
 .modal-text {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5;
-    max-width: 256px;
+    
     text-align: center;
     margin: 0 auto;
 }
@@ -84,6 +89,7 @@
     font-weight: 500;
     line-height: 1.5;
     transition: opacity 250ms ease;
+    width: 100%;
 }
 
 .modal-close-second:active,
@@ -114,7 +120,7 @@
     }
 
     .modal-close-second {
-        min-width: 340px;
+        max-width: 340px;
     }
 
     .title-and-text {
@@ -141,7 +147,7 @@
     }
 
     .modal-close-second {
-        min-width: 274px;
+        max-width: 274px;
     }
 
     .modal-title {
