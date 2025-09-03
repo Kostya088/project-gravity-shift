@@ -34,3 +34,7 @@ button {
   font-weight: 500;
   color: #ffffff;
 }
+
+html {
+  scroll-behavior: smooth;
+}
