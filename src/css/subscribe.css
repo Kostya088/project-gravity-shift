@@ -98,7 +98,6 @@ margin-bottom: 24px;
 
 .send-button:hover,
 .send-button:focus {
-    opacity: 0.7;
     box-shadow: none;
 }
 
