@@ -29,7 +29,7 @@ margin-bottom: 24px;
 .pole {
     display: flex;
     flex-direction: column;
-    gap: 24px ;
+    gap: 16px ;
     margin-bottom: 16px;
 }
 .subscribe {
@@ -62,6 +62,7 @@ border-color: rgba(11, 8, 3, 0.15);
 
 .send-button {
     display: flex;
+    gap: 12px;
     border-radius: 100px;
     align-items: center;
     /* вертикальне центрування */
@@ -85,6 +86,7 @@ border-color: rgba(11, 8, 3, 0.15);
     width: 24px;
     height: 24px;
     display: block;
+    fill:white;
 }
 
 .subscribe-image {
@@ -100,14 +102,10 @@ border-color: rgba(11, 8, 3, 0.15);
         margin-top: 0;
     }
 
-.subscribe-container {
-        gap: 16px;
-
-    }
 .pole {
         display: flex;
         flex-direction: row;
-        margin-bottom: 16px;
+        align-items: center;
         gap: 24px;
     }
     
@@ -116,6 +114,9 @@ border-color: rgba(11, 8, 3, 0.15);
     height: 40px;
 
 }
+.subscribe-image {
+    width: 100%;
+} 
 }
 
 /* для компа */
@@ -123,6 +124,7 @@ border-color: rgba(11, 8, 3, 0.15);
 .subscribe-container {
     flex-direction: row;
     gap: 32px;
+    align-items: center;
 
     }
 .send-button {
@@ -134,7 +136,7 @@ border-color: rgba(11, 8, 3, 0.15);
 
 .subscribe-title {
     font-size: 48px;
-    max-height: 640px ;
+    max-width: 640px ;
     }
 
 .pole {
