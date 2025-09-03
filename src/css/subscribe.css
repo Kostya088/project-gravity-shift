@@ -1,25 +1,26 @@
         /* mobile first */
 
-
-.subscribe-elements {
-    display: block;
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
 }
+
 .subscribe-title {
 font-size: 36px;
-max-height: 129px;
 margin-bottom: 24px;
 }
 
 .text-column {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    max-width: 288px;
     margin-bottom: 32px;
 }
 
 .subscribe-content {
     font-size: 18px;
+    margin-bottom: 32px;
 }
 .subscribe-text {
     font-size: 12px;
@@ -41,7 +42,6 @@ margin-bottom: 24px;
 .subscribe-image {
 border-radius: 40px;
 width: 100%;
-margin-top: 0 auto;
 }
 
 .subscribe-input {
@@ -68,17 +68,12 @@ border-color: rgba(11, 8, 3, 0.15);
 .send-button {
     display: flex;
     border-radius: 100px;
-    width: 288px;
-    height: 44px;
     align-items: center;
     /* вертикальне центрування */
     justify-content: center;
     /* горизонтальне центрування контенту */
-    gap: 12px;
     transition: opacity 250ms ease;
     padding: 10px 89px;
-    margin-top: 24px;
-    fill: #FFF;
 }
 .send-button:active {
     opacity: 0.5;
@@ -88,8 +83,6 @@ border-color: rgba(11, 8, 3, 0.15);
 .send-button:focus {
     opacity: 0.7;
     box-shadow: none;
-    color: #000;
-    fill: #000;
 }
 
 
@@ -114,8 +107,8 @@ border-color: rgba(11, 8, 3, 0.15);
         margin-top: 0;
     }
 
-.subscribe-elements {
-        gap: 32px;
+.subscribe-container {
+        gap: 16px;
 
     }
 .pole {
@@ -130,7 +123,7 @@ border-color: rgba(11, 8, 3, 0.15);
     height: 40px;
 
 }
-.subscribe-image img {
+.subscribe-image {
     border-radius: 40px;
     width: 704px;
     height: 400px;
@@ -155,10 +148,7 @@ border-color: rgba(11, 8, 3, 0.15);
     max-height: 640px ;
     }
 
-.subscribe-elements {
-    display: flex;
-    align-items: center;
-}
+
 .subscribe-image {
     border-radius: 40px;
     width: 640px;
