@@ -6,12 +6,20 @@
 }
 .subscribe-title {
 font-size: 36px;
+max-height: 129px;
 margin-bottom: 24px;
+}
+
+.text-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 288px;
+    margin-bottom: 32px;
 }
 
 .subscribe-content {
     font-size: 18px;
-    margin-bottom: 32px;
 }
 .subscribe-text {
     font-size: 12px;
@@ -19,82 +27,105 @@ margin-bottom: 24px;
 
 
 .pole {
-    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px ;
+    margin-bottom: 16px;
+}
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
-.label-input-subscribe {
+.subscribe-image {
+border-radius: 40px;
+width: 100%;
+margin-top: 0 auto;
+}
+
+.subscribe-input {
+    border: 1px solid rgba(11, 8, 3, 0.15);
     border-radius: 12px;
-    width: 288px;
-    height: 40px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
     padding: 8px 12px;
-    background: rgba(0, 0, 0, 0);
-
+    background: rgba(255, 255, 255, 0);
+    outline: none;
 }
+.subscribe-input :placeholder-shown {
+border-color: rgba(11, 8, 3, 0.15);
+}
+.subscribe-input :valid {
+border-color: rgba(11, 8, 3, 0.15);
+}
+.subscribe-input:not(:placeholder-shown):invalid {
+    border-color: #7f1c1c;
+}
+.subscribe-input:focus::placeholder {
+    color: transparent;
+}
+
 
 .send-button {
+    display: flex;
     border-radius: 100px;
     width: 288px;
     height: 44px;
-    display: flex;
     align-items: center;
-        /* вертикальне центрування */
+    /* вертикальне центрування */
     justify-content: center;
-        /* горизонтальне центрування контенту */
+    /* горизонтальне центрування контенту */
+    gap: 12px;
+    transition: opacity 250ms ease;
     padding: 10px 89px;
     margin-top: 24px;
     fill: #FFF;
-            }
+}
+.send-button:active {
+    opacity: 0.5;
+}
 
 .send-button:hover,
 .send-button:focus {
-    background: rgba(0, 0, 0, 0.1);
-    color: #0b0803;
-    fill: #0b0803;
+    opacity: 0.7;
+    box-shadow: none;
+    color: #000;
+    fill: #000;
 }
 
-    
-.send-icon {
-width: 24px;
-height: 24px;
-display: block;
-}
 
 .send-icon {
-    color: black;
+    width: 24px;
+    height: 24px;
+    display: block;
 }
 
 
-
-
-.subscribe-image img{
-border-radius: 40px;
-width: 288px;
-height: 400px;
-margin-top: 32px;
-}
 
 /* для планшета */
-@media screen and (min-width:768px) and (max-width:1157px){
+@media screen and (min-width:768px) {
+    .text-column {
+        max-width: 704px;
+    }
 
 .send-button {
-        display: flex;
         width: 158px;
+        display: flex;
         padding: 10px 24px;
         margin-top: 0;
     }
 
-    .subscribe-elements {
+.subscribe-elements {
         gap: 32px;
 
     }
-    .pole {
+.pole {
         display: flex;
+        flex-direction: row;
         margin-bottom: 16px;
         gap: 24px;
     }
     
-.label-input-subscribe {
+.subscribe-input {
     width: 340px;
     height: 40px;
 
@@ -107,7 +138,11 @@ margin-top: 32px;
 }
 
 /* для компа */
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
+.subscribe {
+    flex-direction: row;
+
+    }
 .send-button {
         width: 158px;
         display: flex;
@@ -117,13 +152,14 @@ margin-top: 32px;
 
 .subscribe-title {
     font-size: 48px;
+    max-height: 640px ;
     }
 
 .subscribe-elements {
     display: flex;
     align-items: center;
 }
-.subscribe-image img {
+.subscribe-image {
     border-radius: 40px;
     width: 640px;
     height: 400px;
@@ -133,11 +169,10 @@ margin-top: 32px;
     display: flex;
     gap: 16px;
 }
-.label-input-subscribe {
-    width: 340px;
-    height: 44px;
+.subscribe-input {
+    min-width: 340px;
 }
-.subscribe-image img {
+.subscribe-image {
     border-radius: 40px;
     width: 640px;
     height: 400px;

@@ -1,4 +1,4 @@
-<div id="subscribe">
+<section id="#subscribe" class="subscribe-container">
 <div class="container">
   <div class="subscribe-elements">
 
@@ -9,15 +9,17 @@
 <p class="subscribe-content">Experience the joy of coffee delivered right to your door. Sign up today!</p>
 
 <form class="pole">
-  <input class="label-input-subscribe" type="email" placeholder="Your Email Here" id="email" name="email" required />
-  <button type="submit" class="send-button">
+  <input class="subscribe-input" type="email" placeholder="Your Email Here" id="email" name="email" required />
+  <button class="send-button" data-modal open type="submit" >
     Subscribe
-<svg class="send-icon" width=24; height=24; >
+<svg class="send-icon" width="24" height="24">
   <use href="../img/subscribe/icon.svg"></use>
 </svg>
     
   </button>
 </form>
+
+
 <p class="subscribe-text">By clicking Get Started, you agree to our <a href="#">Terms and Conditions</a>.
 </p>
 
@@ -26,36 +28,25 @@
 
       <!-- Права частина -->
       
-<div class="subscribe-image">
-
+<div class="subscribe-image-container">
   <picture>
     <!-- Для телефона -->
     <source media="(max-width: 767px)"
       srcset="../img/subscribe/subscribe-mob.jpg 1x, ../img/subscribe/subscribe-mob@2x.jpg 2x">
 
       <!-- Для планшета -->
-      <source media="(min-width: 768px) and (max-width: 1157px)"
+      <source media="(min-width: 768px) and (max-width: 1439px)"
         srcset="../img/subscribe/subscribe-tab.jpg 1x, ../img/subscribe/subscribe-tab@2x.jpg 2x">
 
     <!-- Для комп'ютера -->
-    <source media="(min-width: 1158px)"
+    <source media="(min-width: 1440px)"
       srcset="../img/subscribe/subscribe-desk.jpg 1x, ../img/subscribe/subscribe-desk@2x.jpg 2x">
 
-<img src="../img/subscribe/subscribe-desk.jpg" alt="People working and enjoying coffee" width="640" height="400"
+<img class="subscribe-image" width="288" height="400"
+csrc="../img/subscribe/subscribe-desk.jpg" alt="People working and enjoying coffee" width="640" height="400"
   srcset="../img/subscribe/subscribe-desk@2x.jpg">
   </picture>
-
-
 </div>
-
-
-
-
-
-
 </div>
-
-
   </div>
-</div>
 </section>
