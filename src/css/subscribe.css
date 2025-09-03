@@ -3,7 +3,7 @@
 .subscribe-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     gap: 32px;
 }
 
@@ -15,7 +15,6 @@ margin-bottom: 24px;
 .text-column {
     display: flex;
     flex-direction: column;
-    margin-bottom: 32px;
 }
 
 .subscribe-content {
@@ -39,10 +38,6 @@ margin-bottom: 24px;
     gap: 32px;
 }
 
-.subscribe-image {
-border-radius: 40px;
-width: 100%;
-}
 
 .subscribe-input {
     border: 1px solid rgba(11, 8, 3, 0.15);
@@ -92,13 +87,11 @@ border-color: rgba(11, 8, 3, 0.15);
     display: block;
 }
 
-
-
+.subscribe-image {
+    border-radius: 40px;
+}
 /* для планшета */
 @media screen and (min-width:768px) {
-    .text-column {
-        max-width: 704px;
-    }
 
 .send-button {
         width: 158px;
@@ -123,17 +116,13 @@ border-color: rgba(11, 8, 3, 0.15);
     height: 40px;
 
 }
-.subscribe-image {
-    border-radius: 40px;
-    width: 704px;
-    height: 400px;
-}
 }
 
 /* для компа */
 @media screen and (min-width: 1440px) {
-.subscribe {
+.subscribe-container {
     flex-direction: row;
+    gap: 32px;
 
     }
 .send-button {
@@ -148,12 +137,6 @@ border-color: rgba(11, 8, 3, 0.15);
     max-height: 640px ;
     }
 
-
-.subscribe-image {
-    border-radius: 40px;
-    width: 640px;
-    height: 400px;
-}
 .pole {
     margin-bottom: 16px;
     display: flex;
@@ -162,11 +145,7 @@ border-color: rgba(11, 8, 3, 0.15);
 .subscribe-input {
     min-width: 340px;
 }
-.subscribe-image {
-    border-radius: 40px;
-    width: 640px;
-    height: 400px;
-}
+
 }
 
 
