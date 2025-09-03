@@ -18,7 +18,7 @@
 
     <title>CoffeeJoy</title>
     <script type="module" crossorigin src="/project-gravity-shift/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-gravity-shift/assets/index-Evg_xzBT.css">
+    <link rel="stylesheet" crossorigin href="/project-gravity-shift/assets/index-BZDztwk7.css">
   </head>
   <body>
     <header class="page-header">
@@ -334,57 +334,78 @@
   </div>
 </section>
       <section id="#subscribe">
-<div class="container subscribe-container">
+  <div class="container subscribe-container">
+    <!-- Ліва частина -->
 
+    <div class="text-column">
+      <h2 class="subscribe-title">Join Our Coffee Community</h2>
+      <p class="subscribe-content">
+        Experience the joy of coffee delivered right to your door. Sign up
+        today!
+      </p>
 
-  <!-- Ліва частина -->
-  
-  <div class="text-column">
-<h2 class="subscribe-title">Join Our Coffee Community</h2>
-<p class="subscribe-content">Experience the joy of coffee delivered right to your door. Sign up today!</p>
+      <form class="pole">
+        <div class="inp-wrap">
+          <input
+            class="subscribe-input"
+            type="email"
+            name="email"
+            placeholder="Your Email Here"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            id="email"
+            required
+          />
+          <p class="text-valid">Succes!</p>
+          <p class="text-invalid">Invalid email, try again</p>
+        </div>
+        <button class="send-button" type="submit" data-modal-open>
+          Subscribe
+          <svg class="send-icon" width="24" height="24">
+            <use href="/project-gravity-shift/assets/icons-CAWK8e5E.svg#icon-two-shevrons"></use>
+          </svg>
+        </button>
+      </form>
+      <p class="subscribe-text">
+        By clicking Get Started, you agree to our
+        <a href="#">Terms and Conditions</a>.
+      </p>
+    </div>
 
-<form class="pole">
-  <input class="subscribe-input" type="email" placeholder="Your Email Here" id="email" name="email" required />
-  <button class="send-button" data-modal open type="submit" >
-    Subscribe
-<svg class="send-icon" width="24" height="24">
-  <use href="/project-gravity-shift/assets/icons-CAWK8e5E.svg#icon-two-shevrons"></use>
-</svg>
-    
-  </button>
-</form>
+    <!-- Права частина -->
 
+    <div class="subscribe-image-container">
+      <picture>
+        <!-- Для телефона -->
+        <source
+          media="(max-width: 767px)"
+          srcset="/project-gravity-shift/assets/subscribe-mob-B4mmoofo.jpg 1x, /project-gravity-shift/assets/subscribe-mob@2x-CBeD_fN4.jpg 2x"
+        />
 
-<p class="subscribe-text">By clicking Get Started, you agree to our <a href="#">Terms and Conditions</a>.
-</p>
+        <!-- Для планшета -->
+        <source
+          media="(min-width: 768px) and (max-width: 1439px)"
+          srcset="/project-gravity-shift/assets/subscribe-tab-DCCIURzv.jpg 1x, /project-gravity-shift/assets/subscribe-tab@2x-vLWH54f2.jpg 2x"
+        />
 
-  </div>
-  
+        <!-- Для комп'ютера -->
+        <source
+          media="(min-width: 1440px)"
+          srcset="/project-gravity-shift/assets/subscribe-desk-CAOrNnKL.jpg 1x, /project-gravity-shift/assets/subscribe-desk@2x-BJhvn5s1.jpg 2x"
+        />
 
-      <!-- Права частина -->
-      
-<div class="subscribe-image-container">
-  <picture>
-    <!-- Для телефона -->
-    <source media="(max-width: 767px)"
-      srcset="/project-gravity-shift/assets/subscribe-mob-B4mmoofo.jpg 1x, /project-gravity-shift/assets/subscribe-mob@2x-CBeD_fN4.jpg 2x">
-
-      <!-- Для планшета -->
-      <source media="(min-width: 768px) and (max-width: 1439px)"
-        srcset="/project-gravity-shift/assets/subscribe-tab-DCCIURzv.jpg 1x, /project-gravity-shift/assets/subscribe-tab@2x-vLWH54f2.jpg 2x">
-
-    <!-- Для комп'ютера -->
-    <source media="(min-width: 1440px)"
-      srcset="/project-gravity-shift/assets/subscribe-desk-CAOrNnKL.jpg 1x, /project-gravity-shift/assets/subscribe-desk@2x-BJhvn5s1.jpg 2x">
-
-<img class="subscribe-image" 
-пsrc="/img/subscribe/subscribe-desk.jpg" alt="People working and enjoying coffee" width="640" height="400"
-  srcset="/project-gravity-shift/assets/subscribe-desk@2x-BJhvn5s1.jpg">
-  </picture>
-</div>
-
+        <img
+          class="subscribe-image"
+          src="/project-gravity-shift/assets/subscribe-desk-CAOrNnKL.jpg"
+          alt="People working and enjoying coffee"
+          width="640"
+          height="400"
+          srcset="/project-gravity-shift/assets/subscribe-desk@2x-BJhvn5s1.jpg"
+        />
+      </picture>
+    </div>
   </div>
 </section>
+
       <section class="testimonials" id="testimonials">
   <div class="container">
     <h2 class="testimonials-title">What our visitors say</h2>
@@ -835,7 +856,7 @@
       </ul>
     </nav>
   </div>
-  <small class="footer-copyright">© 2025 CoffeeJoy. All rights reserved.</small>
+  <small class="footer-copyright">&#169; CoffeeJoy. All rights reserved.</small>
 </footer>
 
 
