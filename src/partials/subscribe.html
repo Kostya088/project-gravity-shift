@@ -1,52 +1,81 @@
 <section id="#subscribe">
-<div class="container subscribe-container">
+  <div class="container subscribe-container">
+    <!-- Ліва частина -->
 
+    <div class="text-column">
+      <h2 class="subscribe-title">Join Our Coffee Community</h2>
+      <p class="subscribe-content">
+        Experience the joy of coffee delivered right to your door. Sign up
+        today!
+      </p>
 
-  <!-- Ліва частина -->
-  
-  <div class="text-column">
-<h2 class="subscribe-title">Join Our Coffee Community</h2>
-<p class="subscribe-content">Experience the joy of coffee delivered right to your door. Sign up today!</p>
+      <form class="pole">
+        <div class="inp-wrap">
+          <input
+            class="subscribe-input"
+            type="email"
+            name="email"
+            placeholder="Your Email Here"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            id="email"
+            required
+          />
+          <p class="text-valid">Succes!</p>
+          <p class="text-invalid">Invalid email, try again</p>
+        </div>
+        <button class="send-button" type="submit" data-modal-open>
+          Subscribe
+          <svg class="send-icon" width="24" height="24">
+            <use href="/img/icons.svg#icon-two-shevrons"></use>
+          </svg>
+        </button>
+      </form>
+      <p class="subscribe-text">
+        By clicking Get Started, you agree to our
+        <a href="#">Terms and Conditions</a>.
+      </p>
+    </div>
 
-<form class="pole">
-  <input class="subscribe-input" type="email" placeholder="Your Email Here" id="email" name="email" required />
-  <button class="send-button" data-modal open type="submit" >
-    Subscribe
-<svg class="send-icon" width="24" height="24">
-  <use href="/img/icons.svg#icon-two-shevrons"></use>
-</svg>
-    
-  </button>
-</form>
+    <!-- Права частина -->
 
+    <div class="subscribe-image-container">
+      <picture>
+        <!-- Для телефона -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            /img/subscribe/subscribe-mob.jpg    1x,
+            /img/subscribe/subscribe-mob@2x.jpg 2x
+          "
+        />
 
-<p class="subscribe-text">By clicking Get Started, you agree to our <a href="#">Terms and Conditions</a>.
-</p>
+        <!-- Для планшета -->
+        <source
+          media="(min-width: 768px) and (max-width: 1439px)"
+          srcset="
+            /img/subscribe/subscribe-tab.jpg    1x,
+            /img/subscribe/subscribe-tab@2x.jpg 2x
+          "
+        />
 
-  </div>
-  
+        <!-- Для комп'ютера -->
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            /img/subscribe/subscribe-desk.jpg    1x,
+            /img/subscribe/subscribe-desk@2x.jpg 2x
+          "
+        />
 
-      <!-- Права частина -->
-      
-<div class="subscribe-image-container">
-  <picture>
-    <!-- Для телефона -->
-    <source media="(max-width: 767px)"
-      srcset="/img/subscribe/subscribe-mob.jpg 1x, /img/subscribe/subscribe-mob@2x.jpg 2x">
-
-      <!-- Для планшета -->
-      <source media="(min-width: 768px) and (max-width: 1439px)"
-        srcset="/img/subscribe/subscribe-tab.jpg 1x, /img/subscribe/subscribe-tab@2x.jpg 2x">
-
-    <!-- Для комп'ютера -->
-    <source media="(min-width: 1440px)"
-      srcset="/img/subscribe/subscribe-desk.jpg 1x, /img/subscribe/subscribe-desk@2x.jpg 2x">
-
-<img class="subscribe-image" 
-пsrc="/img/subscribe/subscribe-desk.jpg" alt="People working and enjoying coffee" width="640" height="400"
-  srcset="/img/subscribe/subscribe-desk@2x.jpg">
-  </picture>
-</div>
-
+        <img
+          class="subscribe-image"
+          src="/img/subscribe/subscribe-desk.jpg"
+          alt="People working and enjoying coffee"
+          width="640"
+          height="400"
+          srcset="/img/subscribe/subscribe-desk@2x.jpg"
+        />
+      </picture>
+    </div>
   </div>
 </section>
