@@ -13,9 +13,10 @@
   text-transform: uppercase;
   margin-bottom: 32px;
 }
-.welcome-wrapper-location {
+.welcome-subcontainer {
   margin-bottom: 32px;
 }
+
 .welcome-paragraph {
   font-size: 18px;
   text-align: start;
@@ -95,7 +96,7 @@
     max-width: 640px;
   }
 
-  .welcome-wrapper-location {
+  .welcome-subcontainer {
     margin-bottom: 80px;
   }
 }
