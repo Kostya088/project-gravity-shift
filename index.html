@@ -794,7 +794,9 @@
 
       <ul class="social-links-list">
         <li class="social-links-item">
-          <a
+          <label class="visually-hidden" for="social-link-facebook"></label
+          ><a
+            id="social-link-facebook"
             class="social-link"
             href="https://www.facebook.com/ "
             target="_blank"
@@ -809,7 +811,9 @@
           </a>
         </li>
         <li class="social-links-item">
+          <label class="visually-hidden" for="social-link-instagram"></label>
           <a
+            id="social-link-instagram"
             class="social-link"
             href="https://www.instagram.com/  "
             target="_blank"
@@ -824,7 +828,12 @@
           </a>
         </li>
         <li class="social-links-item">
-          <a class="social-link" href="https://x.com/" target="_blank"
+          <label class="visually-hidden" for="social-link-twitter"></label>
+          <a
+            id="social-link-twitter"
+            class="social-link"
+            href="https://x.com/"
+            target="_blank"
             ><svg
               class="icon-twitter footer-social-icon"
               width="32"
@@ -861,13 +870,7 @@
 
 
     <!-- Mobile Menu -->
-<div
-  class="mobile-menu"
-  role="dialog"
-  aria-modal="true"
-  aria-labelledby="mobile-menu-title"
-  data-menu
->
+<div class="mobile-menu" role="dialog" aria-modal="true" data-menu>
   <div class="mobile-menu__panel">
     <div class="mobile-menu__top">
       <a class="mobile-menu__logo" href="./index.html" aria-label="Coffee Joy">
@@ -936,7 +939,7 @@
         </svg>
       </button>
       <div class="title-and-text">
-        <h1 class="modal-title">Welcome to the world of CoffeeJoy!</h1>
+        <h2 class="modal-title">Welcome to the world of CoffeeJoy!</h2>
         <p class="modal-text">
           Fresh brews, special offers, and cozy updates are coming your way.
         </p>
@@ -954,6 +957,7 @@
 
         <img
           class="modal-img"
+          src="/img/modal/modal-desk-tab.jpg"
           alt="Coffee"
           srcset="/project-gravity-shift/assets/modal-mob-min-D8Y7f4ee.jpg 1x, /project-gravity-shift/assets/modal-mob@2x-min-65R3s42O.jpg 2x"
         />
